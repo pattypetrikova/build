@@ -1,5 +1,12 @@
 @import "vars";
 
+@mixin container {
+  max-width: 1170px;
+    width: 96%;
+    margin: auto;
+  
+}
+
 body {
     font-family: sans-serif;
 
@@ -8,6 +15,14 @@ body {
 img {
     max-width: 100%;
 }
+
+input {
+  padding: 20px;
+  font-size: 10px;
+  border-radius: 10px;
+  border: solid 1px; color:#DDDDDD;
+}
+
 
 .container {
     max-width: 1170px;
@@ -69,6 +84,107 @@ img {
   margin-left: 30px;
   font-size: 13px;
 }
+}
+
+.offer {
+  padding: 92px 0px;
+  background-color: #F5F5F5;
+
+  &-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-title {
+    font-size: 41px;
+    margin-right: 215px;
+    color: $accent;
+    margin-bottom: 45px;
+    font-weight: 700;
+    
+  }
+
+  &-text {
+    width: 50%;
+  }
+
+  &-img {
+    width: 50%;
+  }
+
+  &-subtitle {
+
+      font-size: 20px;
+      font-weight: 700;
+      color: $accent;
+      margin-bottom: 80px;
+  }
+}
+
+.item1 , .item2 , .item3 {
+  display: flex;
+  margin-bottom: 30px;
+ 
+}
+
+.icon {
+  margin-right: 40px;
+  max-height: 40px;
+}
+
+.span {
+  width: 50%;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: $accent;
+}
+
+.form {
+  display: flex;
+
+  &-text {
+    margin: auto;
+    max-width: 500px;
+  }
+
+  &-header {
+    font-size: 24;
+    margin-right: 50px;
+    color: $accent;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+
+  &-subtitle {
+    margin-right: 200px;
+    color: $accent;
+    font-weight: 400;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 25px;
+    
+  }
+
+  &-main {
+    margin-left: 260px;
+  }
+}
+
+.container-form {
+  @include container();
+  max-width: 50%;
+}
+
+
+.sideimage {
+  opacity: 0.5;
+  height: 600px;
+  width: 960px;
+  object-fit: cover;
+
 }
 
   
