@@ -17,7 +17,8 @@ img {
 }
 
 input {
-  padding: 20px;
+  padding: 26px;
+  padding-right: 95px;
   font-size: 10px;
   border-radius: 10px;
   border: solid 1px; color:#DDDDDD;
@@ -165,12 +166,54 @@ input {
     display: block;
     font-size: 16px;
     margin-bottom: 25px;
-    
+    line-height: 1.5;
   }
 
   &-main {
     margin-left: 260px;
   }
+
+  &-button {
+    padding: 28px 123px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: 700;
+    color: $accent;
+  }
+}
+
+.text-wrap {
+  display: flex;
+  margin-top: 30px;
+}
+
+.desc {
+  width: 50%;
+  font-size: 14px;
+  margin-right: 100px;
+  margin-top: 0px !important;
+  color: $accent;
+}
+
+.desc-wrap {
+  width: 50%
+
+}
+
+.call{
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0px !important;
+  color: $accent;
+}
+
+.phone-number{
+  margin: 0px !important;
+  font-size: 15px;
+  font-weight: 700;
+  color: $accent;
+
 }
 
 .container-form {
@@ -186,7 +229,3 @@ input {
   object-fit: cover;
 
 }
-
-  
-
-

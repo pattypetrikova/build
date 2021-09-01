@@ -7,7 +7,8 @@ img {
 }
 
 input {
-  padding: 20px;
+  padding: 26px;
+  padding-right: 95px;
   font-size: 10px;
   border-radius: 10px;
   border: solid 1px;
@@ -178,10 +179,53 @@ input {
   display: block;
   font-size: 16px;
   margin-bottom: 25px;
+  line-height: 1.5;
 }
 
 .form-main {
   margin-left: 260px;
+}
+
+.form-button {
+  padding: 28px 123px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 30px;
+  font-weight: 700;
+  color: #333;
+}
+
+.text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.desc {
+  width: 50%;
+  font-size: 14px;
+  margin-right: 100px;
+  margin-top: 0px !important;
+  color: #333;
+}
+
+.desc-wrap {
+  width: 50%;
+}
+
+.call {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0px !important;
+  color: #333;
+}
+
+.phone-number {
+  margin: 0px !important;
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
 }
 
 .container-form {
