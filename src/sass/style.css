@@ -1,5 +1,13 @@
+@font-face {
+  font-family: 'Helvetica Neue Cyr Medium';
+  src: url("../fonts/HelveticaNeueCyrMedium/HelveticaNeueCyr-Medium.eot");
+  src: url("HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyrMedium/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyrMedium/HelveticaNeueCyr-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Helvetica Neue Cyr Medium', sans-serif;
 }
 
 img {
@@ -102,6 +110,9 @@ input {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .offer-title {
@@ -110,6 +121,12 @@ input {
   color: #333;
   margin-bottom: 45px;
   font-weight: 700;
+}
+
+@media (max-width: 1180px) {
+  .offer-title {
+    margin-right: 20px;
+  }
 }
 
 .offer-text {
@@ -164,6 +181,12 @@ input {
   max-width: 500px;
 }
 
+@media (max-width: 1100px) {
+  .form-text {
+    max-width: 90%;
+  }
+}
+
 .form-header {
   font-size: 24;
   margin-right: 50px;
@@ -183,7 +206,13 @@ input {
 }
 
 .form-main {
-  margin-left: 260px;
+  margin-left: 14vmax;
+}
+
+@media (max-width: 1650px) {
+  .form-main {
+    margin: auto;
+  }
 }
 
 .form-button {

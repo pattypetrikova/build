@@ -1,5 +1,16 @@
 @import "vars";
 
+@font-face {
+  font-family: 'Helvetica Neue Cyr Medium';
+  src: url('../fonts/HelveticaNeueCyrMedium/HelveticaNeueCyr-Medium.eot');
+  src: url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeueCyrMedium/HelveticaNeueCyr-Medium.woff') format('woff'),
+  url('../fonts/HelveticaNeueCyrMedium/HelveticaNeueCyr-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+
 @mixin container {
   max-width: 1170px;
     width: 96%;
@@ -8,7 +19,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Helvetica Neue Cyr Medium', sans-serif;
 
 }
 
@@ -89,11 +100,12 @@ input {
 
 .offer {
   padding: 92px 0px;
-  background-color: #F5F5F5;
+  background-color: $grey;
 
   &-wrap {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   &-title {
@@ -102,11 +114,16 @@ input {
     color: $accent;
     margin-bottom: 45px;
     font-weight: 700;
+
+    @media (max-width: 1180px) {
+      margin-right: 20px;
+    }
     
   }
 
   &-text {
     width: 50%;
+   
   }
 
   &-img {
@@ -149,6 +166,11 @@ input {
   &-text {
     margin: auto;
     max-width: 500px;
+
+    @media (max-width: 1100px) {
+      max-width: 90%;
+    }
+
   }
 
   &-header {
@@ -170,7 +192,11 @@ input {
   }
 
   &-main {
-    margin-left: 260px;
+    margin-left: 14vmax;
+    @media (max-width: 1650px) {
+      margin: auto;
+    }
+
   }
 
   &-button {
