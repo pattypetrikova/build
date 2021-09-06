@@ -29,6 +29,12 @@ input {
   margin: auto;
 }
 
+@media (max-width: 640px) {
+  .container {
+    width: 85%;
+  }
+}
+
 .button {
   background-color: #FFD200;
   color: #333;
@@ -115,6 +121,15 @@ input {
           align-items: center;
 }
 
+@media (max-width: 1100px) {
+  .offer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .offer-title {
   font-size: 41px;
   margin-right: 215px;
@@ -129,12 +144,31 @@ input {
   }
 }
 
+@media (max-width: 640px) {
+  .offer-title {
+    font-size: 30px;
+  }
+}
+
 .offer-text {
   width: 50%;
 }
 
+@media (max-width: 1100px) {
+  .offer-text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
 .offer-img {
   width: 50%;
+}
+
+@media (max-width: 1100px) {
+  .offer-img {
+    width: 100%;
+  }
 }
 
 .offer-subtitle {
@@ -142,6 +176,13 @@ input {
   font-weight: 700;
   color: #333;
   margin-bottom: 80px;
+}
+
+@media (max-width: 640px) {
+  .offer-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 .item1, .item2, .item3 {
