@@ -39,6 +39,12 @@ a, button {
   margin: auto;
 }
 
+@media (max-width: 850px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
 @media (max-width: 640px) {
   .container {
     width: 85%;
@@ -49,6 +55,11 @@ a, button {
   background-color: #FFD200;
   color: #333;
   border: none;
+  padding: 28px 123px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 30px;
+  font-weight: 700;
 }
 
 .span {
@@ -533,6 +544,16 @@ a, button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .steps__icons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .steps img {
@@ -556,6 +577,18 @@ a, button {
   margin-top: 20px;
 }
 
+@media (max-width: 850px) {
+  .steps__icon {
+    width: 40%;
+  }
+}
+
+@media (max-width: 550px) {
+  .steps__icon {
+    width: 100%;
+  }
+}
+
 .steps__icon--border {
   width: 100px;
   height: 100px;
@@ -576,5 +609,198 @@ a, button {
 .steps__icon--subtitle {
   text-align: center;
   line-height: 20px;
+}
+
+.document {
+  margin: 150px 0;
+  text-align: center;
+}
+
+.document__title {
+  margin-bottom: 100px;
+}
+
+.document-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 850px) {
+  .document-block {
+    justify-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.document-block__item {
+  max-width: 22%;
+}
+
+@media (max-width: 850px) {
+  .document-block__item {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 550px) {
+  .document-block__item {
+    max-width: 100%;
+  }
+}
+
+.document-block__text {
+  margin-top: 40px;
+  line-height: 24px;
+  font-style: 18px;
+}
+
+.brief {
+  background-image: url(../img/interview-bg.png), url(../img/brief-bg.jpg);
+  background-position: left center, center right;
+  background-size: 50%, contain;
+  background-repeat: repeat-y , no-repeat;
+}
+
+@media (max-width: 950px) {
+  .brief {
+    background-image: url(../img/interview-bg.png), url(../img/brief-bg.jpg);
+    background-position: top center, center bottom;
+    background-size: 50%, contain;
+    background-repeat: repeat-y , no-repeat;
+  }
+}
+
+.brief-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px 0;
+}
+
+@media (max-width: 950px) {
+  .brief-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+.brief__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.brief__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .brief__form {
+    padding-left: 30px;
+  }
+}
+
+.brief__button {
+  margin-bottom: 20px;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .brief__button {
+    margin: 20px auto;
+  }
+}
+
+.brief__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.interview {
+  padding-right: 100px;
+}
+
+@media (max-width: 1200px) {
+  .interview {
+    padding-right: 30px;
+  }
+}
+
+.interview__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+
+.interview__subtitle {
+  font-size: 16px;
+  margin-bottom: 60px;
+  display: block;
+}
+
+.interview-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (max-width: 950px) {
+  .interview-list {
+    margin: auto;
+  }
+}
+
+.interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  font-weight: bolder;
+}
+
+.interview-list__text {
+  max-width: 350px;
+  font-size: 18px;
+}
+
+.interview-list__counter {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #000000;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50px;
+  margin-right: 30px;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+
+.form__subtitle {
+  font-size: 16px;
+  margin-bottom: 50px;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
