@@ -3,7 +3,7 @@ $(document).ready(function () {
   new WOW().init();
 
 // modalni okno
-    var button = $("button");
+    var button = $(".form-button");
     var modal = $(".modal")
     var close = $(".modal-dialog__close")
 
@@ -14,6 +14,22 @@ $(document).ready(function () {
     close.on("click", function() {
         modal.removeClass("modal_active");
     })
+
+
+// Validace formularu
+
+$("#brief-form").validate({
+  rules: {
+    username: "required",
+    phone: "required",
+  },
+  messages: {
+    username: "Uveďte Vaše jméno",
+    phone: "Uveďte Váš telefon",
+  }
+});
+
+
 
 // slick slider
     $(".projects-wrap").slick({

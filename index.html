@@ -76,8 +76,8 @@
                     </span>
                     <div class="form-wrap">
                         <form action="" class="order">
-                            <input class=name type="text" name="name" placeholder="Vaše jméno">
-                            <input class=number type="text" name="number" placeholder="Váš telefon">
+                            <input class=name type="text" name="username" requiered minlength="5"placeholder="Vaše jméno">
+                            <input class=number type="number" name="number" placeholder="Váš telefon">
                         </form>
                         <button type="submit" class="button form-button">Získejte bezplatný design-projekt </button>
                         <div class="text-wrap">
@@ -176,7 +176,7 @@
 <!-- sekce s kroky -->
 
 <section class="steps">
-    <div class="container">
+    <div class="container  wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
         <h2 class="steps__title title">Naši experti jsou připraveni k změření kdykoli se Vám to hodí</h2>
         <p class="steps__subtitle section__subtitle">5 kroků k renovaci</p>
         <div class="steps__icons">
@@ -214,16 +214,18 @@
         
 
     </div>
-
-
 </section>
-<section class="notice">
+
+<!-- sekce s textem -->
+</section>
+<section class="notice  wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
     <div class="container">
         <h2 class="notice__text">Oprava Vás bude stát levněji, protože používáme kvalitní materiály za velkoobchodní ceny
         </h2>    
     </div>
 </section>
 
+</section>
 <!-- sekce s benefity -->
 <section class="info">
     <div class="container">
@@ -246,19 +248,19 @@
                     Všechny naše povinnosti jsou <br> detailně propsané ve smlouvě 
                 </h2>
                 <div class="document-block">
-                    <div class="document-block__item">
+                    <div class="document-block__item wow animate__animated animate__fadeInUp"  data-wow-delay="0.1s">
                         <div class="document-block__image">
                             <img src="./src/img/doc1.png" alt="">
                         </div>
                         <p class="document-block__text">Záruka kvality provedené práce</p>
                     </div>
-                    <div class="document-block__item">
+                    <div class="document-block__item wow animate__animated animate__fadeInUp"  data-wow-delay="0.2s">
                         <div class="document-block__image">
                             <img src="./src/img/doc2.png" alt="">
                         </div>
                         <p class="document-block__text">Záruka na fixované ceny <br> Druhy práce a jejich ceny <br>   jsou propsa</p>
                     </div>
-                    <div class="document-block__item">
+                    <div class="document-block__item wow animate__animated animate__fadeInUp"  data-wow-delay="0.3s">
                         <div class="document-block__image">
                             <img src="./src/img/doc3.png" alt="">
                         </div>
@@ -274,13 +276,13 @@
 <section class="brief">
     <div class="container">
         <div class="brief-block">
-            <div class="interview brief__interview">
+            <div class="interview brief__interview wow animate__animated animate__fadeInLeft">
                 <h3 class="interview__title">Můžeme Vám sdělit přibližnou cenu práce a materiálů po telefonu</h3>   
                 <span class="interview__subtitle">K tomu musíte odpovědět na 4 otázky:</span>
                 <ul class="interview-list">
                     <li class="interview-list__item">
                         <span class="interview-list__counter">1.</span>
-                        <span class="interview-list__text">Jaká je plocha místnosti</span>
+                        <span class="interview-list__text">Jaká je plocha místnosti?</span>
                     </li>
                     <li class="interview-list__item">
                         <span class="interview-list__counter">2.</span>
@@ -296,12 +298,12 @@
                     </li>
                 </ul>
             </div>
-            <div class=" brief__form">
+            <div class=" brief__form wow animate__animated animate__fadeInRight ">
                 <h3 class="form__title">Zanechte poptávku na bezplatný výpočet renovace po telefonu </h3>
                 <span class="form__subtitle">Vyplňte níže uvedený formulář</span>
-                <form action="#">
-                    <input type="text" placeholder="Vaše jméno:" class="input brief__input">
-                    <input type="text" placeholder="Váš telefon:" class="input brief__input"> 
+                <form action="#" id="brief-form">
+                    <input type="text" name="username" minlength="5" placeholder="Vaše jméno:" class="input brief__input">
+                    <input type="text"  name="phone" placeholder="Váš telefon:" class="input brief__input"> 
                     <button class="button brief__button">Vypočítat náklady</button> 
                     <span class="form__description">Zavoláme Vám nazpět do 60 sekund</span>
                 </form>
@@ -310,9 +312,48 @@
     </div>
 </section>
 
+<section class="map" id="map">
+    <div class="map-block wow animate__animated animate__fadeInLeft ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.0552314171664!2d14.449992115718215!3d50.085252779426575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b949f25f1ac71%3A0xe150818060283f9b!2zxaB0w610bsOpaG8gMjg1LCAxMzAgMDAgUHJhaGEgMy3FvWnFvmtvdg!5e0!3m2!1scs!2scz!4v1640777641108!5m2!1scs!2scz" width="100%" height="640" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="container__map container wow animate__animated animate__fadeInRight">
+        <div class="contact-block">
+            <div class="contact">
+                <h3 class="contact__title">Přijďte nás navštívit! Poradíme vám se všemi otázkami ohledně oprav </h3>
+                <ul class="contact-list">
+                    <li class="contact-list__item">
+                        <span class="contact-list__icon">
+                            <img src="./src/img/map-i.png" alt="map">
+                        </span>
+                        <span class="contact-list__text">
+                            Praha <br> <strong>Štítného 285/29, <br>  130 00 Praha 3-Žižkov, Czechia</strong> 
+                        </span>
+                    </li>
+                    <li class="contact-list__item">
+                        <span class="contact-list__icon">
+                            <img src="./src/img/clock-i.png" alt="clock">
+                        </span>
+                        <span class="contact-list__text">Pracovní doba: <br> <strong>od 9:00 do 18:00 </strong>  </span>
+                    </li>
+                    <li class="contact-list__item">
+                        <span class="contact-list__icon">
+                            <img src="./src/img/phone-i.png" alt="phone">
+                        </span>
+                        <span class="contact-list__text">
+                            Telefon: <br>  <strong>+ 420 777 167 699</strong>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
+</section>
 
 </main>
+<footer> <p class="copyright">© Patricie Petríková 2021</p>
+
+</footer>
 
 <div class="modal">
     <div class="modal-dialog">
@@ -325,6 +366,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./src/js/slick.min.js"></script>
 <script src="./src/js/wow.min.js"></script>
+<script src="./src/js/jquery.validate.min.js"></script>
 <script src="./src/js/main.js"></script>
 
 </body> 
